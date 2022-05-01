@@ -1,0 +1,476 @@
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  background-color: #fe3c72;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-ul {
+  position: fixed;
+  display: flex;
+  float: right;
+  width: 40%;
+  margin: 1% 1% 0 0;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  height: 20%;
+}
+
+.nav-ul li {
+  padding: 0 5% 0 5%;;
+  display: block;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+}
+
+.heading {
+  font-weight:bold;
+  margin-top:1%;
+  margin-left: 2%;
+  position: fixed;
+  color: white;
+}
+
+/*///////////////////////// intro.jsx /////////////////////////*/
+.intro{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro-words {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.intro-text {
+  font-size: 12vh;
+  width: 80%;
+  text-align: left;
+}
+
+.intro-button {
+background-color: white;
+margin: 10% 0 20% 0;
+width: 50%;
+ font-size: 150%;
+ border-radius: 25px;
+ border-style: hidden;
+ padding: 5% 0;
+}
+
+.intro a {
+  color: #424242;
+}
+
+.intro-img-div{
+width: 80%;
+margin-right: 10%;
+margin-top: 10%;
+}
+
+.intro-img {
+  width: 50vw;
+  border-radius: 25px;
+  margin-top: 20%;
+  
+}
+
+/* /////////////////////////Benefits.jsx //////////////////////////*/
+.benefits {
+  text-align: center;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  color: #424242;
+}
+
+.benefits-friend {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-friend img{
+  width:10%;
+}
+
+.benefits-home {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-home img{
+  width: 8%;
+}
+
+/* about */
+
+.page {
+ padding-top: 10%;
+ padding-bottom: 10%;
+ width: 100%;
+}
+
+.page p {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.page h1 {
+  text-align: center;
+  margin: 5%
+}
+
+/* footer */
+.footer {
+  text-align: center;
+}
+
+/* Reviews */
+
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.reviews-list{
+  width: 100%;
+}
+
+.reviews button {
+  margin: 10%;
+}
+
+.review-posts {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.review-posts li {
+  width: 33%;
+  margin: 5%;
+  /* height: 40%; */
+}
+
+.review-posts p {
+  font-size: 110%;
+}
+
+
+
+/* Upload */
+
+.upload {
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.upload-button button {
+  background-color: white;
+  width: 15vw;
+ font-size: 100%;
+ border-radius: 25px;
+ border-style: hidden;
+ margin-top: 10%;
+ padding: 5%;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1199px) {
+  /* body {
+    background-color: red;
+  } */
+
+  .nav-ul {
+    position: fixed;
+    right: 5%;
+    display: flex;
+    text-align: right;
+    width: 50%;
+  }
+
+  .nav-ul li {
+    margin-bottom: 20%;
+  }
+  
+  .intro{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-words {
+    margin: 0;
+  }
+  
+  
+  .intro-text {
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+  }
+  
+  .intro-img {
+    width: 150%;
+  }
+
+  .intro-button {
+    margin-left: 35%;
+    width: 30%;
+    font-size: 150%;
+   }
+
+   /* Slideshow */
+  .intro-img-div {
+    margin: 0 25%;
+    margin-bottom: 16%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+  /* intro.jsx */
+/* .intro{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+} */
+
+.nav-ul {
+  position: fixed;
+  left: 55%;
+  display: flex;
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+.nav-ul li {
+  font-size: 100%;
+  margin-bottom: 20%;
+}
+
+.intro-words {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: left;
+  margin-left: 10%;
+}
+
+
+.intro-text {
+  font-size: 12vh;
+  width: 80%;
+  text-align: left;
+}
+
+.intro-button {
+ width: 30%;
+font-size: 150%;
+}
+
+.intro-img-div{
+margin-top: 5%;
+}
+
+.intro-img {
+  width: 40vw;
+  border-radius: 25px;
+}
+
+}
+
+/* Card */
+.cards-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  color:#fe3c72;
+
+}
+
+.card-title {
+  color:#424242;
+  font-size: 18px;
+}
+
+.card button {
+  margin: non;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color:white;
+  background-color:#424242;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 10%;
+  font-size: 18px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* MAP */
+
+.map-container {
+  width: 80%;
+  height: 50vh;
+}
+
+.map-h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 20px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.google-map {
+  width: 100%;
+  height: 60vh;
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  color: var(--main-blue);
+}
+
+.pin-icon {
+  font-size: 4rem;
+}
+
+.pin-text {
+  /* width: 100%; */
+}
+
+.pin-words {
+  font-size: 100%;
+  color: #fe3c72;
+}
+
+@media screen and (min-width: 799px) {
+  .google-map {
+    height: 80vh;
+  }
+
+  .map-h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .pin {
+    width: 15vw;
+  }
+
+  .pin-icon {
+    font-size: 10vw;
+  }
+}
+
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slideshowSlider {
+  /* removes white space surrounding images*/
+  white-space: nowrap;
+  /* transition between photos speed */
+  transition: ease 3000ms;
+}
+
+.slide {
+  display: inline-block;
+  margin-top: 20%;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #424242;
+}
+
+
+
