@@ -17,6 +17,9 @@ https://blog.logrocket.com/integrating-google-maps-react/
 Animal profile cards on the search page
 https://www.w3schools.com/howto/howto_css_cards.asp
 
+Login/Logout CSS buttons
+https://getcssscan.com/css-buttons-examples
+
 
 # External APIs - Choose your own adventure!
 
