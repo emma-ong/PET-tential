@@ -2,6 +2,15 @@ export const REQUEST_REVIEWS = 'REQUEST_REVIEWS'
 export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS'
 export const SHOW_ERROR = 'SHOW_ERROR'
 export const ADD_REVIEW = 'ADD_REVIEW'
+export const SET_USER = 'SET_USER'
+
+export function setUser(user) {
+  return {
+    type: SET_USER,
+    user,
+  }
+}
+
 
 export function requestReviews () {
   return {
