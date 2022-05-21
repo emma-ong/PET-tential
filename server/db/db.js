@@ -23,5 +23,5 @@ function getReviews(db=connection){
 }
 
 function addReview(newReview, db=connection){
-  return db('reviews').insert(newReview)
+  return db('reviews').insert(newReview, 'id')
 }
