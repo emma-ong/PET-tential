@@ -5,7 +5,7 @@ import {requestReviews, receiveReviews, addReview, showError} from '../client/ac
 // const apiKey = process.env.API_KEY
 
 
-const serverURL = 'http://localhost:3000/api/v1'
+const serverURL = 'https://emmaong-pet-tential.herokuapp.com/api/v1'
 
 // *** EXAMPLE ***
 // export function getWelcome() {
