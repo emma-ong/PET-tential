@@ -13,13 +13,13 @@
     "dev:server": "nodemon server",
     "webpack": "webpack --config ./client/webpack.config.js",
     "start": "node server",
-    "build": "run-p build:client build:server",
+    "build": "run-p build:client build:server webpack --mode=production",
     "build:client": "npm run webpack -- --mode production",
     "build:server": "npm run knex -- migrate:latest",
     "server": "node server",
     "test": "jest --watchAll",
     "lint": "eslint --ext .js,.jsx .",
-    "knex": "knex --knexfile server/db/knexfile.js"
+    "knex": "knex --knexfile ./server/db/knexfile.js"
   },
   "babel": {
     "presets": [
