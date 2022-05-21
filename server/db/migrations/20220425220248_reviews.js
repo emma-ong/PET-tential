@@ -5,7 +5,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('reviews', (table) => {
     table.increments('id').primary()
-    table.integer('name')
+    table.string('name')
     table.string('post')
   })
 };

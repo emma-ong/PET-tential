@@ -5,7 +5,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('pets', (table) => {
     table.increments('id').primary()
-    table.integer('name')
+    table.string('name')
     table.integer('mobile')
     table.string('description')
     table.string('img')
