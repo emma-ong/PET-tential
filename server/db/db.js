@@ -15,7 +15,7 @@ function getPets(db = connection) {
 }
 
 function addPet(newPet, db=connection){
-  return db('pets').insert(newPet, 'id')
+  return db('pets').insert(newPet)
 }
 
 function getReviews(db=connection){
@@ -23,5 +23,5 @@ function getReviews(db=connection){
 }
 
 function addReview(newReview, db=connection){
-  return db('reviews').insert(newReview, 'id')
+  return db('reviews').insert(newReview)
 }
