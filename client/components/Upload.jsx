@@ -16,7 +16,7 @@ function Upload() {
   const handleChange = (event) => {
     const {name, value} = event.target
     const newForm = {
-      ...form, image: 'pet-tential.png',[name]:value
+      ...form, img: 'pet-tential.png',[name]:value
     }
     setForm(newForm)
   }
