@@ -60,8 +60,9 @@ function Upload() {
        <input  
             id="img"
             onChange={handleChange}
-            value={form.img}
-            name="img"/>
+            value='pet-tential.png'
+            name="img"
+            disabled/>
      </div>
       <div className='upload-button'>
       <button role="button">Submit</button>
