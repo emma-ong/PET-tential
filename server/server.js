@@ -2,7 +2,6 @@ const path = require('path')
 const express = require('express')
 
 
-
 const pets = require('./routes/pets')
 const dogFacts = require('./routes/dogFacts')
 const reviews = require('./routes/reviews')

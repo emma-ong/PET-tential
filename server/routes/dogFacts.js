@@ -5,7 +5,7 @@ const router = express.Router()
 // GET /api/v1/dogFacts
 router.get('/', (req, res) => {
   return request
-    .get('https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all')
+    .get('http://dog-api.kinduff.com/api/facts')
     .then((data)=>{
       res.json(data)
     })

@@ -1,24 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import {getDogFacts} from '../api'
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); 
-  //The maximum is exclusive and the minimum is inclusive
-}
-
 function DogFact() {
   const [fact, setFact] = useState('')
 
   useEffect(()=>{
     getDogFacts()
     .then((res)=>{
-      let factsArr = JSON.parse(res.text)
-      let length = factsArr.length
-      setFact(factsArr[getRandomInt(0,length)].fact)
+      let data = JSON.parse(res.text)
+      setFact(data.facts[0])
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log(err, getDogFacts()))
   }, [])
 
   return <>

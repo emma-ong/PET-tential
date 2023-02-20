@@ -5,7 +5,7 @@ import {requestReviews, receiveReviews, addReview, showError} from '../client/ac
 // const apiKey = process.env.API_KEY
 
 
-const serverURL = 'https://emmaong-pet-tential.herokuapp.com/api/v1'
+const serverURL = 'https://pet-tential.netlify.app/api/v1'
 
 // *** EXAMPLE ***
 // export function getWelcome() {
