@@ -13,12 +13,12 @@ function DogFact() {
     .catch(err => console.log(err, getDogFacts()))
   }, [])
 
-  return <>
+  return ( fact && <>
     <div style={{textAlign: 'center'}}>
     <h2>Random fact of the day!</h2>
      <p>{fact}</p>
     </div>
-  </>
+  </>)
 }
 
 export default DogFact
